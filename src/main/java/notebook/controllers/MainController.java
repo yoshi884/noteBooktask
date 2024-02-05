@@ -66,13 +66,7 @@ public class MainController {
     }
 
 
- /*   @PostMapping("/create")
-    public ResponseEntity<NoteBookDto> insertNoteBook(@RequestBody NoteBookDto noteBookDto) {
-        var noteBookToInsert = noteBookMapper.toNoteBookEntity(noteBookDto);
-        var insertedNoteBook = repository.insert(noteBookToInsert);
-        var insertedStudentDto = noteBookMapper.fromNoteBookEntity(insertedNoteBook);
-        return ResponseEntity.ok(insertedStudentDto);
-    }*/
+
 
     @GetMapping("/create")
     String createPage(){

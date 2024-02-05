@@ -62,10 +62,7 @@ public class RestController {
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     public void insertNoteBook(@RequestBody NoteBookDto noteBookDto) {
-       /* var noteBookToInsert = noteBookMapper.toNoteBookEntity(noteBookDto);
-        var insertedNoteBook = repository.insert(noteBookToInsert);
-        var insertedStudentDto = noteBookMapper.fromNoteBookEntity(insertedNoteBook);
-        return ResponseEntity.ok(insertedStudentDto);*/
+
         NoteBookEntity createdNoteBook = noteBookService.create(noteBookDto);
     }
 

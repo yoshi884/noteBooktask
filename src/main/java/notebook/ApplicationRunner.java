@@ -26,14 +26,6 @@ public class ApplicationRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-      /*  repository.deleteAll();
-        NotionsEntity entity = new NotionsEntity();
-        entity.setContent("1312");
-        NoteBookEntity noteBookEntity = new NoteBookEntity();
-        noteBookEntity.setAuthor("123");
-        noteBookEntity.setNotionsEntity(entity);
-        repository.save(noteBookEntity);*/
-      /*  repository.deleteAll();*/
 
     }
 }
