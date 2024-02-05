@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebooks</title>
+</head>
+<body>
+<div th:each="notebook : ${notebooks}">
+    <a th:href="@{'/notebook/' + ${notebook.getId()}}" th:text="|${notebook.getId()} |"> Notebook</a>
+</div><br>
+<form action="/create" method="get">
+    <button >Create Notebook</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      username: mongoadmin
+      password: secret
+      uri: mongodb://mongoadmin:secret@localhost:9999/
+      database: notepads

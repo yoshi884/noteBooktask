@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <title>Create page</title>
+</head>
+<body>
+<form action="/create" method="post">
+    <label for="author">Author:
+        <input id = "author" type="text" name="author">
+    </label><br>
+    <label for="warp_colour">Warp Colour:
+        <input id="warp_colour" type="text" name="warp_colour" >
+    </label><br>
+    <!--<label for="notionsEntity">Notions:
+        <input id="notionsEntity" type="text" name="notionsEntity">
+    </label><br>-->
+
+    <button type="submit">Create</button><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook</title>
+</head>
+<body>
+    <form th:action="@{/notebook/{notebookId}/update(notebookId = ${notebook.id})}" method="post">
+        <label for="author">Author:
+            <input id = "author" type="text" name="author" th:value="${notebook.author}">
+        </label><br>
+        <label for="warp_colour">Warp Colour:
+            <input id="warp_colour" type="text" name="warp_colour" th:value="${notebook.warp_colour}">
+        </label><br>
+        <label for="notionsEntity">Notions:
+            <input id="notionsEntity" type="text" name="notionsEntity" th:value="${notebook?.notionsEntity?.content}">
+        </label><br>
+
+        <button type="submit">Update</button><br>
+    </form>
+
+    <form th:action="@{/notebook/{notebookId}/delete(notebookId = ${notebook.id})}" method="post">
+
+        <button type="submit">Delete</button><br>
+    </form>
+</body>
+</html>
